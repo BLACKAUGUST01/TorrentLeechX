@@ -41,13 +41,25 @@ from tobrot.helper_funcs.upload_to_tg import upload_to_tg
 async def upload_as_doc(client, message):
     user_specific_config[message.from_user.id]=UserDynaConfig(message.from_user.id,True)
     u_men = message.from_user.mention
-    await message.reply_text(f"<i><b>👤 User : {u_men} \n\n🏷Toggle Changed : <code>Document 📂</code></b></i>")
+    await message.reply_text(f"<i><b>┏━━🛠 𝗧𝗼𝗴𝗴𝗹𝗲 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀 : /n
+┣👤 𝐔𝐬𝐞𝐫 : {u_men} /n
+┣🆔️ 𝐈𝐃 : {u_id} /n
+┃/n
+┣🏷𝐓𝐨𝐠𝐠𝐥𝐞 :<code> 📂Document📂</code>/n
+┃/n
+┗━♦️ℙ𝕠𝕨𝕖𝕣𝕖𝕕 𝔹𝕪 @Wolf_Cloud ♦️━╹<i><b>")
 
 
 async def upload_as_video(client, message):
     user_specific_config[message.from_user.id]=UserDynaConfig(message.from_user.id,False)
     u_men = message.from_user.mention
-    await message.reply_text(f"<i><b>👤 User : {u_men}\n\n🏷Toggle Changed : <code>Video 🎞</code></b></i>")
+    await message.reply_text(f" <i><b>┏━━🛠 𝗧𝗼𝗴𝗴𝗹𝗲 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀 : /n
+┣👤 𝐔𝐬𝐞𝐫 : {u_men} /n
+┣🆔️ 𝐈𝐃 : {u_id} /n
+┃/n
+┣🏷𝐓𝐨𝐠𝐠𝐥𝐞 :<code> 🎞 Video 🎞</code>/n
+┃/n
+┗━♦️ℙ𝕠𝕨𝕖𝕣𝕖𝕕 𝔹𝕪 @Wolf_Cloud ♦️━╹<i><b> ")
  
 
 async def status_message_f(
